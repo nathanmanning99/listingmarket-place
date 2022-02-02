@@ -1,0 +1,24 @@
+@mixin flex-grid-items($cols) {
+  display: flex;
+
+  > * {
+    $item-width: 100% / $cols;
+    width: $item-width;
+    box-sizing: border-box;
+  }
+}
+
+@mixin card {
+  background: #fff;
+  box-shadow: 0px 2px 13px 0px rgba(77, 76, 76, 0.2),
+    0px 1px 1px 0px rgba(77, 76, 76, 0.2), 0px 1px 3px 0px rgba(77, 76, 76, 0.2);
+}
+
+@mixin fontAwesome() {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+@mixin fA-free {
+  font-family: "Font Awesome 5 Free";
+}

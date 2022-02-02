@@ -1,0 +1,128 @@
+.c-listing {
+  @include card();
+  border-radius: 8px;
+  color: $text !important;
+  cursor: pointer;
+
+  &:hover {
+    margin-top: -3px;
+    transition-duration: 0.15s;
+  }
+}
+
+.expenses-list {
+  background: #f9f9f9;
+  margin-bottom: 50px;
+  padding: 33px 0px;
+}
+
+.listing {
+  margin: rem-calc(8) 0;
+  font-size: 16px;
+  &__img {
+    max-width: -webkit-fill-available;
+    padding: rem-calc(10);
+    border-radius: rem-calc(16);
+    height: rem-calc(210);
+    width: 100%;
+  }
+
+  &__like {
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    width: 44px;
+    height: 44px;
+    &::after {
+      @include fA-free();
+      content: "\f004";
+      color: #e52815;
+      font-size: rem-calc(19);
+      &:active {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__premium {
+    border: none;
+    background-color: #ffd700;
+    font-size: 15px;
+    float: right;
+    margin-top: -18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    top: 34px;
+  }
+  &__name {
+    font-size: rem-calc(16);
+    font-weight: bold;
+    padding-top: 0.4375rem;
+    display: inline;
+  }
+
+  &__price {
+    color: $green;
+    font-weight: 600;
+    float: right;
+  }
+
+  &__location {
+    color: #666;
+    font-size: 13px;
+    font-weight: 600;
+
+    display: inline;
+    position: relative;
+  }
+
+  &__description {
+    font-size: 13px;
+    color: #666;
+    margin-top: 6px;
+    margin-bottom: 15px;
+  }
+
+  &__more {
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: bold;
+    color: #4caf50;
+    float: right;
+    position: relative;
+    top: -4px;
+    &::after {
+      @include fA-free();
+      content: "\f309";
+      margin-left: rem-calc(9);
+      font-weight: 900;
+      font-size: rem-calc(18);
+      top: rem-calc(3);
+      position: relative;
+      color: $mainGreen;
+      transform: rotate(270deg);
+      display: inline-block;
+    }
+  }
+}
+
+.backdrop {
+  padding: rem-calc(14);
+  padding-top: 0;
+}
+
+.row {
+  overflow: hidden;
+}
+
+[class*="col-"] {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+:hover:before {
+  background-color: red;
+}

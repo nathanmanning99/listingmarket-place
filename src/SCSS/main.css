@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+@media (max-width: rem-calc(768)) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+}
+
+.flex-5-cols {
+  display: flex;
+  display: block;
+  margin: auto;
+}
+
+.flex-5-cols > * {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif !important;
+}
+
+h1,
+p {
+  color: black;
+}
+
+input {
+  color: #3e3c49;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+a {
+  color: #ff7a7a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #92b788;
+  padding: 1.25rem 0 1.25rem !important;
+}
+
+.navbar__float-left {
+  padding-left: 0 !important;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 23px;
+  color: #fff !important;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.navbar__float-left:hover {
+  color: #fff;
+}
+
+.navbar__float-left--small-size {
+  font-size: 14px;
+  padding-left: 0 !important;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar__float-left--small-size:hover {
+  color: #fff;
+}
+
+.navbar__float-left--small-size:first-child::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  padding-left: 0.4375rem;
+}
+
+.navbar__link {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff !important;
+}
+
+.navbar__link--button {
+  background: #5368df;
+  padding: 8px;
+  border: none;
+  text-transform: uppercase;
+}
+
+.navbar__button {
+  background-color: #5f8256;
+  margin-left: 15px;
+}
+
+.second-lower {
+  background: #5f8256 !important;
+  padding: 0.5rem !important;
+}
+
+.bold {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.slick-dots {
+  display: none !important;
+}
+
+.carousel__img {
+  max-width: 100%;
+  width: 100%;
+  height: 400px;
+}
+
+.mega-menu .card {
+  background: #5f8256;
+  border-radius: 0;
+  border: none;
+  margin-top: -15px;
+}
+
+.mega-menu__list {
+  color: fff;
+}
+
+.mega-menu__links {
+  color: #fff;
+  cursor: pointer;
+  list-style: none;
+}
+
+.mega-menu__links:hover::after {
+  content: "\f105";
+  right: 97px;
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  font-weight: 900;
+}
+
+.mega-menu .card-header {
+  background-color: inherit !important;
+  border-bottom: none !important;
+  padding: 1.1rem 0 !important;
+  margin-bottom: 0;
+  color: #fff;
+  font-weight: 600;
+  width: 151px;
+  cursor: pointer;
+}
+
+.mega-menu .card-header__1 {
+  background-color: inherit !important;
+  border-bottom: none !important;
+  padding: 0.1rem 0;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: lowercase;
+  letter-spacing: normal;
+}
+
+.mega-menu .card-header__1::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  padding-left: 0.4375rem;
+  font-size: 12px;
+}
+
+.mega-menu .card-body {
+  padding: 0.25rem 0 !important;
+}
+
+.mega-menu .show {
+  display: block;
+}
+
+.c-listing {
+  background: #fff;
+  box-shadow: 0px 2px 13px 0px rgba(77, 76, 76, 0.2), 0px 1px 1px 0px rgba(77, 76, 76, 0.2), 0px 1px 3px 0px rgba(77, 76, 76, 0.2);
+  border-radius: 8px;
+  color: #666 !important;
+  cursor: pointer;
+}
+
+.c-listing:hover {
+  margin-top: -3px;
+  transition-duration: 0.15s;
+}
+
+.expenses-list {
+  background: #f9f9f9;
+  margin-bottom: 50px;
+  padding: 33px 0px;
+}
+
+.listing {
+  margin: 0.5rem 0;
+  font-size: 16px;
+}
+
+.listing__img {
+  max-width: -webkit-fill-available;
+  padding: 0.625rem;
+  border-radius: 1rem;
+  height: 13.125rem;
+  width: 100%;
+}
+
+.listing__like {
+  position: absolute;
+  border-radius: 50%;
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+  width: 44px;
+  height: 44px;
+}
+
+.listing__like::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+  color: #e52815;
+  font-size: 1.1875rem;
+}
+
+.listing__like::after:active {
+  font-weight: 700;
+}
+
+.listing__premium {
+  border: none;
+  background-color: #ffd700;
+  font-size: 15px;
+  float: right;
+  margin-top: -18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  top: 34px;
+}
+
+.listing__name {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 0.4375rem;
+  display: inline;
+}
+
+.listing__price {
+  color: #38cc8c;
+  font-weight: 600;
+  float: right;
+}
+
+.listing__location {
+  color: #666;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline;
+  position: relative;
+}
+
+.listing__description {
+  font-size: 13px;
+  color: #666;
+  margin-top: 6px;
+  margin-bottom: 15px;
+}
+
+.listing__more {
+  margin-bottom: 0;
+  font-size: 13px;
+  font-weight: bold;
+  color: #4caf50;
+  float: right;
+  position: relative;
+  top: -4px;
+}
+
+.listing__more::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f309";
+  margin-left: 0.5625rem;
+  font-weight: 900;
+  font-size: 1.125rem;
+  top: 0.1875rem;
+  position: relative;
+  color: #4caf50;
+  transform: rotate(270deg);
+  display: inline-block;
+}
+
+.backdrop {
+  padding: 0.875rem;
+  padding-top: 0;
+}
+
+.row {
+  overflow: hidden;
+}
+
+[class*="col-"] {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+:hover:before {
+  background-color: red;
+}
+
+.listing-details {
+  margin: 2rem 0;
+}
+
+.listing-details .row {
+  --bs-gutter-x: 0.5rem;
+  --bs-gutter-y: 0.5rem;
+}
+
+.listing-details__img {
+  width: auto;
+  max-width: -webkit-fill-available;
+  border-radius: 0.4375rem;
+  height: auto;
+}
+
+.listing-details__img--main {
+  width: auto;
+  max-width: -webkit-fill-available;
+  border-radius: 0.4375rem;
+  height: 100%;
+}
+
+.listing-details__img--2 {
+  width: auto;
+  max-width: -webkit-fill-available;
+  border-radius: 0.4375rem;
+  height: auto;
+  margin-top: 0.6875rem;
+}
+
+.listing-details__price {
+  display: block;
+  margin-top: 1rem;
+}
+/*# sourceMappingURL=main.css.map */

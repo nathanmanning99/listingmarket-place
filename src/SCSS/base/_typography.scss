@@ -1,0 +1,22 @@
+body {
+  font-family: $open-sans !important;
+}
+
+h1,
+p {
+  color: black;
+}
+
+input {
+  color: $dark-blue;
+}
+
+small {
+  font-size: rem-calc(12);
+}
+
+a {
+  color: $red;
+  font-weight: bold;
+  text-decoration: none;
+}
